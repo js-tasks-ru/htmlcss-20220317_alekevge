@@ -3,11 +3,24 @@
     --primary_hover: #2342C0;
     --secondary_hover: #5028C6;
     --transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-    padding: 15px;
+    padding: 15px 15px 14px 15px;
     height:  48px;
     border-radius: 8px;
     transition: var(--transition);
-    border:none;
+    border:1px solid var(--border_color,transparent) ;
+    background-color: var(--back_color);
+    box-sizing: border-box;
+}
+
+.btn_text{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--text-color, var(--white))
 }
 
 .btn:disabled{
@@ -17,32 +30,30 @@
 
 
 .btn_primary{
-    background-color: var(--primary);
-    color: var(--white);
+    --back_color: var(--primary);
 }
 
 .btn_primary:hover{
-    background-color: var(--primary_hover);
+    --back_color: var(--primary_hover);
 }
 
 
 .btn_secondary{
-    background-color: var(--secondary);
-    color: var(--white)
+    --back_color: var(--secondary);
 }
 
 .btn_secondary:hover{
-    background-color: var(--secondary_hover);
+    --back_color: var(--secondary_hover);
 }
 
 
 .btn_alt{
     --transition:none;
-    background-color: var(--white);
-    border: solid var(--grey-3) 1px;
-    color: var(--grey-4)
+    --border_color: var(--grey-3);
+    --back-color: var(--white);
+    --text-color: var(--grey-4)
 }
 
 .btn_alt:hover{
-    border-color: var(--black);
+    --border_color: var(--black);
 }
