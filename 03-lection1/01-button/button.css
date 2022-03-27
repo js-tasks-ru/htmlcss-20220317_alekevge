@@ -1,12 +1,10 @@
 /* Стилизация кнопки */
 .btn{
-    --primary_hover: #2342C0;
-    --secondary_hover: #5028C6;
     padding: 15px 15px 14px 15px;
     height:  48px;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     vertical-align: middle;
-    border: 0px solid black;
+    border: none;
     border-radius: 8px;
     background-color: var(--primary);
     box-sizing: border-box;
