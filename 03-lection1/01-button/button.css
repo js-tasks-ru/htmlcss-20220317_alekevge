@@ -2,20 +2,16 @@
 .btn{
     --primary_hover: #2342C0;
     --secondary_hover: #5028C6;
-    --transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     padding: 15px 15px 14px 15px;
     height:  48px;
-    border-radius: 8px;
-    transition: var(--transition, none);
-    border-width: var(--border_width, 0px);
-    border-style: solid;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     vertical-align: middle;
-    border-color: var(--border_color, var(--primary));
-    background-color: var(--back_color,var(--primary));
+    border: 0px solid black;
+    border-radius: 8px;
+    background-color: var(--primary);
     box-sizing: border-box;
-}
 
-.btn_text{
+    /* text */    
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -23,7 +19,7 @@
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
-    color: var(--text-color, var(--white))
+    color: var(--white)
 }
 
 .btn:disabled{
@@ -33,34 +29,30 @@
 
 
 .btn_primary{
-    --back_color: var(--primary);
-    --border_width:0px;
+    background-color: var(--primary);
 }
 
 .btn_primary:hover{
-    --back_color: var(--primary_hover);
+    background-color: var(--primary_hover);
 }
 
 
 .btn_secondary{
-    --back_color: var(--secondary);
-    --border_width:0px;
-    --border_color:var(--secondary)
+    background-color: var(--secondary);
 }
 
 .btn_secondary:hover{
-    --back_color: var(--secondary_hover);
+    background-color: var(--secondary_hover);
 }
 
 
 .btn_alt{
-    --transition:none;
-    --border_width:1px;
-    --border_color: var(--grey-3);
-    --back_color: var(--white);
-    --text-color: var(--grey-4)
+    transition:none;
+    border: 1px solid var(--grey-3);
+    background-color: var(--white);
+    color: var(--grey-4)
 }
 
 .btn_alt:hover{
-    --border_color: var(--black);
+    border-color: var(--black);
 }
