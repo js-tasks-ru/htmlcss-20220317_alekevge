@@ -3,7 +3,7 @@
     background-color: var(--white);
 }
 
-.header_title{
+.header__title{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
