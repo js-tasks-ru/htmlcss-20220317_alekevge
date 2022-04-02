@@ -11,6 +11,10 @@
     line-height: 24px;
 }
 
+.footer__container{
+    max-width: 640px;
+    margin: auto;
+}
 
 .footer__title{
     font-weight: 500;
