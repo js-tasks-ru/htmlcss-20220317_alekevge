@@ -30,6 +30,7 @@
 .histogram__href{
     color:var(--blue);
     cursor: pointer;
+    margin-top:3px;
 }
 
 .histogram__counter{
