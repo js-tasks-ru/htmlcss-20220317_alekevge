@@ -38,12 +38,6 @@
     width: 15px;
 }
 
-.modal__cross_reverse{
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    transform: scaleX(-1);
-}
 
 .modal__title{
     font-family: 'Inter';
