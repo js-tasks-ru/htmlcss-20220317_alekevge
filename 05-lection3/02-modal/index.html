@@ -4,9 +4,36 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <title>Modal</title>
     </head>
     <body>
+        <button id="modal-open" class="btn  btn_primary">Open Modal</button>
+        <div id="modal" class="modal__background">
+            <div class="modal__window">
+
+                <div id="modal-close" class="modal__closeicon">
+                    <svg class="modal__cross">
+                        <use href="../../assets/icons/icons.svg#close_cross"></use>
+                    </svg>
+                    <svg class="modal__cross_reverse">
+                        <use href="../../assets/icons/icons.svg#close_cross"></use>
+                    </svg>
+                </div>
+
+                <div class="modal__title">
+                    Modal title
+                </div>
+
+                <div class="modal__msg">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+            </div>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
