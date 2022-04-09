@@ -4,8 +4,26 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./tooltip.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <style>
+           .container{
+               padding: 140px;
+               text-align: center;
+           } 
+        </style>
     </head>
     <body>
-
+        <div class="container">
+            <div class="tooltip">
+                <svg class="tooltip__icon">
+                    <use href="../../assets/icons/icons.svg#question"></use>
+                </svg>
+                <div class="tooltip__helper">
+                    Helper Text
+                </div>
+            </div>
+        </div>
     </body>
 </html>
