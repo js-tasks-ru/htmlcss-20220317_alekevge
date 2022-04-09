@@ -18,7 +18,7 @@
     text-align: center;
     margin: 0;
     color: var(--grey-blue);
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .calendar__wrapper{
@@ -43,7 +43,7 @@
     align-items: center;
 }
 
-.calendar__elem__weekday{
+.calendar__elem-weekday{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -53,37 +53,25 @@
     color: var(--soft-grey);
 }
 
-.calendar__elem_date{
+.calendar__elem-date{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-
     cursor: pointer;
+}
+
+.calendar__elem-date_unselected{
     color: var(--grey-blue);
 }
 
-.calendar__elem__inrange{
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
-    cursor: pointer;
+.calendar__elem-date_inrange{
     background-color: var(--soft-blue);
 }
 
-.calendar__elem__selected{
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
+.calendar__elem-date_selected{
     background-color: var(--blue);
-    cursor: pointer;
     color:var(--white);
 }
 
