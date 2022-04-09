@@ -22,6 +22,7 @@
     --grey-5: #F9FAFC;
     --grey-blue: #334D6E;
     --soft-grey: #90A0B7;
+    --grey-background:#C4C4C4;
 
     --error: var(--red);
     --success: var(--blue);
