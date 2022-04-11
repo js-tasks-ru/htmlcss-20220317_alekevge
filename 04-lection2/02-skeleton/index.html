@@ -5,7 +5,30 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./skeleton.css">
     </head>
+    <style>
+        .container{
+            margin: 25px;
+            max-width: 600px;
+        }
+    </style>
     <body>
+        <div class="container">
+            <div class="skeleton">
+                <div class="skeleton__header">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="32" fill="#DDE2E5"/>
+                    </svg>
+                    <div class="skeleton__title">
+                        <div class="skeleton__elem_small"></div>
+                        <div class="skeleton__elem_medium"></div>
+                    </div>
+                </div>
 
+                <div class="skeleton_body">
+                    <div class="skeleton__elem"></div>
+                    <div class="skeleton__elem"></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

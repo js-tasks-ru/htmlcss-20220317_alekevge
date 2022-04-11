@@ -1,0 +1,39 @@
+.skeleton{
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px 40px 24px 24px;
+}
+
+.skeleton__header{
+    display: flex;
+    gap:16px;
+    margin-bottom: 24px;
+    justify-content: flex-start; /* оно и так default flex-start */
+}
+
+.skeleton__title{
+    flex-grow: 1;
+}
+
+.skeleton__elem{
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    height: 20px;
+    margin:8px 0px; /* схлопывающийся отступ */
+}
+
+.skeleton__elem_small{
+    width: 33%;
+    height: 20px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    margin:8px 0px; /* схлопывающийся отступ */
+}
+
+.skeleton__elem_medium{
+    width: 50%;
+    height: 20px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    margin:8px 0px;  /* схлопывающийся отступ */
+}
+
