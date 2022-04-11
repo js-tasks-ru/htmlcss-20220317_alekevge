@@ -4,9 +4,73 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./calendar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <title>Calendar</title>
     </head>
+    <style>
+        .container{
+            display: flex;
+            height: 100%;
+        
+            align-items: center;
+            justify-content: center;
+        } 
+    </style>
     <body>
+        <div class="container">
+            <div class="calendar">
+                <h4 class="calendar__title">
+                    April 2022
+                </h4>
+                <div class="calendar__wrapper">
+                    <div class="calendar__inner">
+                        <span class="calendar__flexitem calendar__elem-weekday">Mon</span>
+                        <span class="calendar__flexitem calendar__elem-weekday">Tue</span>
+                        <span class="calendar__flexitem calendar__elem-weekday">Wed</span>
+                        <span class="calendar__flexitem calendar__elem-weekday">Thu</span>
+                        <span class="calendar__flexitem calendar__elem-weekday">Fri</span>
+                        <span class="calendar__flexitem calendar__elem-weekday">Sat</span>
+                        <span class="calendar__flexitem calendar__elem-weekday">Sun</span>
 
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected"></span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected"></span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected"></span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">1</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">2</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">3</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">4</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">5</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">6</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">7</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">8</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">9</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">10</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">11</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">12</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">13</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">14</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">15</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">16</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">17</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">18</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">19</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_selected">20</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_inrange">21</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_inrange">22</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_inrange">23</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_inrange">24</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_selected">25</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">26</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">27</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">28</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">29</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">30</span>
+                        <span class="calendar__flexitem calendar__elem-date calendar__elem-date_unselected">31</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
