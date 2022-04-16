@@ -1,0 +1,13 @@
+.avatar{
+    border-radius: 100%;
+    height: 100%; /* ставим только height потому  что div - display:block - занимает всю ширину контейнера */
+    overflow: hidden;
+}
+
+.avatar_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* здесь ставим block потому что img изначально inline элемент  - может не занять всю высоту контейнера*/
+}
+
