@@ -10,19 +10,19 @@
 Тут важен порядок написания media запросов - они  могут перебивать друг другу классы
 */
 
-@media (max-width:1024px),(max-height:576px){
+@media (max-width:1024px){
     .background-image{
     background-image: url("./public/forest_1024.jpg");
     }
 }
 
-@media (max-width:768px), (max-height:432px){
+@media (max-width:768px){
     .background-image{
         background-image: url("./public/forest_768.jpg");
     }  
 }
 
-@media (max-width:400px),(max-height:225px){
+@media (max-width:400px){
     .background-image{
         background-image: url("./public/forest_400.jpg"); 
     }
