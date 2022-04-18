@@ -1,6 +1,7 @@
 .avatar{
-    border-radius: 100%;
-    height: 100%; /* ставим только height потому  что div - display:block - занимает всю ширину контейнера */
+    border-radius: 50%;
+    height: 102px;  /* ставим только height потому  что div - display:block - занимает всю ширину контейнера */
+    width: 102px;
     overflow: hidden;
 }
 
