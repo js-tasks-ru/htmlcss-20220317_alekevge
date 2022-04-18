@@ -1,0 +1,33 @@
+.background-image{
+    background-image: url("./public/forest_2560.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* наверно по смыслу фон должен занимать все пространство поэтому ставим cover а не contain  */
+    height:100%;
+}
+
+/*Внимание !!!  
+Тут важен порядок написания media запросов - они  могут перебивать друг другу классы
+*/
+
+@media (max-width:1024px){
+    .background-image{
+    background-image: url("./public/forest_1024.jpg");
+    }
+}
+
+@media (max-width:768px){
+    .background-image{
+        background-image: url("./public/forest_768.jpg");
+    }  
+}
+
+@media (max-width:400px){
+    .background-image{
+        background-image: url("./public/forest_400.jpg"); 
+    }
+}
+
+
+
+
