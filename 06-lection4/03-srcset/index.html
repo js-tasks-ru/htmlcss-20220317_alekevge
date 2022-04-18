@@ -3,8 +3,18 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./srcset.css">
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+    </style>
     </head>
     <body>
-
+        <div class="container">
+            <img  class="srcset" src="public/forest_400.jpg"  alt="Image"  srcset="public/forest_400.jpg 1x,
+                                                                                   public/forest_768.jpg 2x">
+        </div>
     </body>
 </html>
