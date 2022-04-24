@@ -4,8 +4,44 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
+    <style>
+        .wrapper{
+            margin:10px;
+        }
+    </style>
     <body>
+         <label class="radio wrapper">
+            <input type="radio" class="radio__input" name="select" checked>
+            <div class="radio__state">
+                <div class="radio__control"></div>
+                <div class="radio__title">
+                    Выбрать 1
+                </div>
+            </div>
+        </label> 
 
+        <label class="radio wrapper">
+            <input type="radio" class="radio__input" name="select">
+            <div class="radio__state">
+                <div class="radio__control"></div>
+                <div class="radio__title">
+                    Выбрать 2
+                </div>
+            </div>
+        </label> 
+
+        <label class="radio wrapper">
+            <input type="radio" class="radio__input" name="select" disabled>
+            <div class="radio__state">
+                <div class="radio__control"></div>
+                <div class="radio__title">
+                    Выбрать 3
+                </div>
+            </div>
+        </label> 
     </body>
 </html>
