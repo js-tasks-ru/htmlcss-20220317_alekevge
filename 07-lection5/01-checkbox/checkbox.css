@@ -60,6 +60,11 @@
     border: 1px solid var(--grey-2);
 }
 
+.checkbox__input:disabled~.checkbox__state .checkbox__title
+{
+    color: var(--grey-2)
+}
+
 .checkbox__input:disabled~.checkbox__state
 {
     cursor: default;
