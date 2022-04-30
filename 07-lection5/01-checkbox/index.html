@@ -4,8 +4,59 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        .wrapper{
+            margin:10px;
+        }
+    </style>
     </head>
+    
     <body>
+        <label class="checkbox wrapper">
+            <input type="checkbox" class="checkbox__input" autocomplete="off"> <!-- autocomplete="off" сделано для Firefox по default все чекбоксы checked -->
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/icons/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__title">
+                    Default
+                </div>
+            </div>
+        </label>
 
+        <br>
+        <label class="checkbox wrapper">
+            <input type="checkbox" class="checkbox__input"  checked autocomplete="off">
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/icons/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__title">
+                    Default
+                </div>
+            </div>
+        </label>
+        
+        <br>
+        <label class="checkbox wrapper">
+            <input type="checkbox" class="checkbox__input" disabled autocomplete="off">
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/icons/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__title">
+                    Default
+                </div>
+            </div>
+        </label>
     </body>
 </html>

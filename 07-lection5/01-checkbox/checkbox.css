@@ -1,0 +1,82 @@
+.checkbox{
+    display: inline-flex;
+    position: relative;
+    vertical-align: middle; /* Выравняем inline элемент */
+    user-select: none; /* Запретим выделение текста пользователем */
+}
+
+.checkbox__state{
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   cursor: pointer;   
+}
+
+.checkbox__input{
+    position: absolute;
+    outline: none;
+    clip: rect(0,0,0,0) /* обнулим стороны чекбокса */
+}
+
+.checkbox__icon{
+    height: 13px;
+    width: 15px;
+    color:var(--white);
+    display: none;
+}
+
+.checkbox__control{
+    width: 28px;
+    height: 28px;
+
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+.checkbox__input:checked~.checkbox__state .checkbox__control
+{
+    background: var(--blue); 
+    border: 1px solid var(--blue);
+}
+
+.checkbox__input:disabled~.checkbox__state .checkbox__control
+{
+    background: var(--grey-2);
+    border: 1px solid var(--grey-2);
+}
+
+.checkbox__input:disabled~.checkbox__state .checkbox__title
+{
+    color: var(--grey-2)
+}
+
+.checkbox__input:disabled~.checkbox__state
+{
+    cursor: default;
+}
+
+
+.checkbox__input:checked~.checkbox__state .checkbox__control .checkbox__icon
+{
+    display: block;
+}
+
+.checkbox__input:focus~.checkbox__state .checkbox__title
+{
+    text-decoration: underline;
+}
