@@ -1,7 +1,5 @@
 .radio{
-    display: inline-flex;
     cursor: pointer;
-    margin: 10px;
     user-select: none; /* Запретим выделение текста пользователем */
 }
 
@@ -23,26 +21,33 @@
 }
 
 .radio__control{
-    width: 24px;
-    height: 24px;
-    margin: 2px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     box-sizing: border-box;
-    border: 5px solid var(--white);
+    border: 1px solid var(--grey-2);
     background-color: var(--white);
-    outline: 1px solid var(--grey-2);
+    position: relative;
 }
 
 .radio__input:checked~.radio__state .radio__control{
-    border-color: var(--white);
-    background-color: var(--blue);
-    outline: 2px solid var(--blue);
+    border: 2px solid var(--blue);
 }
+
+.radio__input:checked~.radio__state .radio__control::after{
+    content: "";
+    border: 9px solid var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .radio__input:disabled~.radio__state .radio__control{
     border-color: var(--grey-2);
     background-color: var(--grey-2);
-    outline: 2px solid var(--grey-2);
 }
 
 .radio__title{
