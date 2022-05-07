@@ -1,0 +1,92 @@
+.toggler{
+    user-select: none;
+}
+
+.toggler__input{
+    position: absolute; /* чтобы скрытый input не занимал место и не влиял на верстку */
+    outline: none;
+    clip: rect(0,0,0,0) /* обнулим стороны чекбокса */
+}
+
+.toggler__state{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.toggler__control{
+    width: 52px;
+    height: 28px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    transition: border-color linear 200ms, background-color linear 200ms;
+}
+
+.toggler__control::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: var(--grey-2);
+    margin: 1px;
+    transition: transform linear 200ms, background-color 200ms linear;
+    display: block;
+    border-radius: 16px;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control{
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control::after
+{
+    transform: translateX(100%);
+    background-color: var(--white);
+}
+
+.toggler__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+.toggler__title::after{
+    content:"Off"
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__title::after{
+    content:"On";
+    text-decoration: underline;
+}
+
+.toggler__input:focus ~ .toggler__state .toggler__title::after{
+    text-decoration: underline;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__title
+{
+    color: var(--grey-2);
+}
+
+.toggler__input:disabled ~ .toggler__state{
+    cursor: default;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control{
+    border-color: var(--grey-2);
+    background-color: var(--grey-2);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control::after{
+    background-color: var(--grey-3);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__title::after{
+    content:"Disabled";
+}

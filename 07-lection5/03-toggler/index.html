@@ -4,8 +4,35 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
+    <style>
+        .wrapper{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
     <body>
-
+        <div class="wrapper">
+            <label class="toggler">
+                <input class="toggler__input" type="checkbox">
+                <div class="toggler__state">
+                    <div class="toggler__control"></div>
+                    <div class="toggler__title"></div>
+                </div>
+            </label>
+            
+            <label class="toggler">
+                <input class="toggler__input" type="checkbox" disabled>
+                <div class="toggler__state">
+                    <div class="toggler__control"></div>
+                    <div class="toggler__title"></div>
+                </div>
+            </label>
+        </div>
     </body>
 </html>
