@@ -4,8 +4,45 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     </head>
+    <style>
+    .form-group{
+        display: inline-grid;
+        gap:12px;
+    }
+    </style>
     <body>
+        <form>
+            <fieldset>
+                <legend>
+                    Форма заполнения данных
+                </legend>
 
+                <div class="form-group">
+                    <label  class="input">
+                        <input  type="text" class="input__field" placeholder="">
+                        <h5 class="input__title">empty field</h5>
+                    </label>
+
+                    <label  class="input">
+                        <input  type="text" class="input__field input__field_success" value="Success">
+                        <h5 class="input__title">error field</h5>
+                    </label>
+
+                    <label  class="input">
+                        <input  type="text" class="input__field input__field_invalid" value="Error">
+                        <h5 class="input__title">error field</h5>
+                    </label>
+
+                    <label  class="input">
+                        <input  type="text" class="input__field" value="Disabled" disabled>    
+                        <h5 class="input__title">disabled field</h5>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
     </body>
 </html>
