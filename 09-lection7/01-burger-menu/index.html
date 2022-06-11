@@ -4,9 +4,145 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+        <link rel="stylesheet" href="../../07-lection5/02-radio/radio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <script defer src="./burger-menu.js"></script>
+        <style>
+            .page{
+                background-color: peru;
+                height: 100%;
+            }
+            
+            /*следовало бы отправить в  ../../07-lection5/03-toggler/toggler.css */
+
+            .toggler_burger-menu{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .toggler__title_burger-menu
+            {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--grey-4)
+            }
+          .toggler__title_burger-menu::after{
+                content:"";
+            }
+
+        </style>
+
+        <style>
+            /*следовало бы отправить в ../../07-lection5/02-radio/radio.css*/
+            .radio__input:checked ~ .radio__state .radio__title__burger-menu{
+                color: var(--notificaiton);
+                text-decoration: none;
+            }
+
+            .radio__input:checked:hover ~ .radio__state .radio__title__burger-menu{
+                color: var(--notificaiton);
+            }
+
+            .radio__input:hover ~ .radio__state .radio__title__burger-menu{
+                color: var(--grey-3);
+            }
+
+            .radio__title__burger-menu
+            {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--black);
+            }
+
+            .radio__burger-menu{
+                padding: 8px 0px 8px 0px;
+                display: block;
+            }
+        </style>
     </head>
     <body>
+        <div class="burger-menu">
 
+            <input type="checkbox" class="burger-menu__input" id="show_menu" autocomplete="off">
+            <label class="burger-menu__control" for="show_menu">
+                
+                <div class="burger-menu__state">
+                    <svg class="burger-menu__icon burger-menu__icon_opened">
+                        <use href="../../assets/icons/icons.svg#menu_opened"></use>
+                    </svg>
+                    <svg class="burger-menu__icon burger-menu__icon_closed">
+                        <use href="../../assets/icons/icons.svg#menu_closed"></use>
+                    </svg>
+                </div>
+   
+            </label>
+
+            <div class="burger-menu__header">
+                <svg class="burger-menu__header-icon">
+                    <use href="../../assets/icons/icons.svg#header_sing"></use>
+                </svg>
+            </div>
+
+            <div class="burger-menu__slide">
+                <div class="burger-menu__theme-switcher">
+                    <label class="toggler toggler_burger-menu">
+                        <span class="toggler__title toggler__title_burger-menu">
+                            Dark mode
+                        </span>
+                        <input class="toggler__input" type="checkbox">
+                        <div class="toggler__state">
+                            <div class="toggler__control"></div>
+                        </div>
+                    </label>
+  
+                </div>
+
+                <div class="burger-menu__list">
+                    <div class="burger-menu__list-header">
+                        Components
+                    </div>
+                    
+                    <label class="radio radio__burger-menu">
+                        <input type="radio" class="radio__input" name="select" autocomplete="off">
+                        <div class="radio__state">
+                            <div class="radio__title radio__title__burger-menu">
+                                Modal
+                            </div>
+                        </div>
+                    </label> 
+
+                    <label class="radio radio__burger-menu">
+                        <input type="radio" class="radio__input" name="select" autocomplete="off">
+                        <div class="radio__state">
+                            <div class="radio__title radio__title__burger-menu">
+                                Tooltip
+                            </div>
+                        </div>
+                    </label> 
+                    
+                    <label class="radio radio__burger-menu">
+                        <input type="radio" class="radio__input" name="select" autocomplete="off">
+                        <div class="radio__state">
+                            <div class="radio__title radio__title__burger-menu">
+                                Avatar
+                            </div>
+                        </div>
+                    </label> 
+                </div>
+            </div>
+        </div>
+
+        <div class="page">
+
+        </div>
     </body>
 </html>

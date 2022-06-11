@@ -23,6 +23,7 @@
     --grey-blue: #334D6E;
     --soft-grey: #90A0B7;
     --grey-background:#C4C4C480; /* hex + '80' = (0.5 opacity) */
+    --notificaiton: #D84910;
 
     --error: var(--red);
     --success: var(--blue);
