@@ -1,0 +1,110 @@
+.burger-menu__icon{
+    height: 32px;
+    width: 32px;
+}
+
+.burger-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@media (min-width: 1240px)
+{
+    .burger-menu{
+        display: none;
+    }
+}
+
+.burger-menu__header
+{
+    height: 64px;
+    display: flex;
+    background-color: var(--grey-5);
+}
+
+.burger-menu__header-icon{
+    margin: auto;
+    display: block;
+    width: 110px;
+    height: 32px;
+}
+
+.burger-menu__control{
+    cursor:pointer;
+    position: absolute;
+    top:16px;
+    left:12px;
+
+}
+.burger-menu__input{
+    position: absolute;
+    outline: none;
+    clip: rect(0,0,0,0) /* обнулим стороны чекбокса */
+}
+
+.burger-menu__state{
+    display: inline-block;
+}
+
+.burger-menu__input ~ .burger-menu__control >.burger-menu__state >.burger-menu__icon_opened{
+    display: block;
+}
+
+.burger-menu__input:checked ~ .burger-menu__control >.burger-menu__state >.burger-menu__icon_opened{
+    display: none;
+    
+}
+.burger-menu__input:checked ~ .burger-menu__control >.burger-menu__state >.burger-menu__icon
+{
+    border-radius: 50%;
+    background-color: var(--grey-2);
+}
+
+
+.burger-menu__input ~ .burger-menu__control >.burger-menu__state >.burger-menu__icon_closed{
+    display: none;
+}
+
+.burger-menu__input:checked ~ .burger-menu__control >.burger-menu__state >.burger-menu__icon_closed{
+    display: block;
+}
+
+.burger-menu__slide{
+    height: 100%;
+    transition: linear 200ms transform;
+    max-width: 600px;
+    transform: translateX(-100%);
+}
+
+.burger-menu__input:checked ~.burger-menu__slide{
+    transform: translateX(0%);
+}
+
+.burger-menu__slide
+{
+    background-color: var(--grey-5);
+    padding: 16px;
+}
+
+.burger-menu__theme-switcher
+{
+    border: solid   var(--grey-2);
+    border-width: 1px 0px 1px 0px;
+    padding: 28px 0px 24px 0px;
+}
+
+.burger-menu__list
+{
+    padding-top: 24px;
+}
+
+.burger-menu__list-header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-3)
+}
